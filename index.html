@@ -52,6 +52,12 @@ h3 {
   margin: 5px;
   font-size: 14px;
 }
+ul {
+  padding-left: 20px;
+}
+ul li {
+  margin-bottom: 8px;
+}
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -81,11 +87,44 @@ h3 {
 .cta h2 {
   color: white;
 }
+.cta button {
+  background: #123b6d;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cta button:hover {
+  background: #0a2540;
+}
 .footer {
   background: #081c33;
   color: #cfd8e3;
   text-align: center;
   padding: 40px 20px;
+  margin-top: 40px;
+}
+.footer h3 {
+  margin-top: 0;
+  color: #fff;
+}
+.footer .contact-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.footer .contact-info div {
+  margin: 10px;
+}
+.footer .contact-info a {
+  color: #cfd8e3;
+  text-decoration: none;
+}
+.footer .contact-info a:hover {
+  color: #ffffff;
 }
 .faq-item {
   margin-bottom: 25px;
@@ -124,19 +163,19 @@ h3 {
   <p>
     This program is intentionally designed for learners who do not have access
     to neuroscience laboratories, advanced coursework, or formal neuroscience degrees.
-    Instruction is delivered primarily in Bengali to ensure accessibility and clarity.
+    Instruction is delivered primarily in <strong>Bengali</strong> to ensure accessibility and clarity.
   </p>
 </div>
 
 <!-- WHY -->
 <div class="section">
-  <h2>Why This Course Is Important</h2>
+  <h2>Why This Course Matters</h2>
   <div class="grid">
     <div class="card">
       <h3>Access Gap</h3>
       <p>
-        Cognitive neuroscience education in Bangladesh is limited to selected institutions.
-        This course opens access to learners nationwide.
+        Cognitive neuroscience education in Bangladesh is limited.
+        This program offers an open, online entry point for learners without institutional access.
       </p>
     </div>
     <div class="card">
@@ -154,8 +193,7 @@ h3 {
     </div>
   </div>
   <div class="highlight">
-    This is a <strong>foundational-level applied course</strong>, not a substitute
-    for graduate or clinical neuroscience training.
+    This is a <strong>foundational-level course</strong>, not graduate or clinical training.
   </div>
 </div>
 
@@ -164,9 +202,9 @@ h3 {
   <h2>Learning Outcomes</h2>
   <ul>
     <li>Understand core concepts of cognitive neuroscience</li>
-    <li>Explain how cognition is studied experimentally</li>
+    <li>Learn how cognition is studied experimentally</li>
     <li>Design basic cognitive tasks</li>
-    <li>Interpret EEG and ERP findings at a foundational level</li>
+    <li>Interpret EEG and ERP results at a basic level</li>
     <li>Read and understand neuroscience research figures</li>
     <li>Integrate behavioral and neural evidence responsibly</li>
   </ul>
@@ -214,92 +252,69 @@ h3 {
     <div class="card">
       <h3>Topics</h3>
       <ul>
-        <li>Brain–mind–behavior relationship</li>
-        <li>Attention, memory, executive functions</li>
-        <li>Mental chronometry</li>
+        <li>Brain–mind–behavior relationships</li>
         <li>Cognitive paradigms</li>
+        <li>Mental chronometry</li>
         <li>EEG and ERP fundamentals</li>
         <li>ERP interpretation</li>
-        <li>Time–frequency concepts</li>
       </ul>
     </div>
     <div class="card">
       <h3>Tools</h3>
       <ul>
         <li>PsychoPy</li>
-        <li>Python</li>
-        <li>MNE-Python</li>
-        <li>Open EEG/ERP datasets</li>
+        <li>Python (introductory)</li>
+        <li>MNE-Python (demonstration-based)</li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- PROJECT -->
+<!-- COURSE OUTLINE LINK -->
 <div class="section">
-  <h2>Group Project</h2>
+  <h2>Course Outline</h2>
   <p>
-    Learners will work in small groups on a guided mini-project involving
-    behavioral task design or ERP analysis using open datasets.
-    The project emphasizes interpretation, not advanced technical execution.
+    For a more detailed breakdown of the course, you can view the full outline:
   </p>
+  <div class="cta">
+    <a href="https://docs.google.com/spreadsheets/d/1xO5PnbTkPau_8vhHk9J5bqKdbtTt5knr/edit?usp=sharing" target="_blank">
+      <button>View Full Course Outline</button>
+    </a>
+  </div>
 </div>
 
-<!-- INSTRUCTOR -->
+<!-- ENROLLMENT FORM -->
 <div class="section">
-  <h2>Instructor</h2>
+  <h2>Enroll Now</h2>
   <p>
-    <strong>MD. Faisal Ahmed</strong><br>
-    Program Lead and Research Coordinator, Bangladesh Institute of Innovative Health Research (BIIHR)
+    To enroll in the course, please fill out the registration form below:
   </p>
-  <p>
-    An early-career researcher with experience in psychology and public health research,
-    dedicated to expanding neuroscience education access in Bangladesh.
-  </p>
-</div>
-
-<!-- FAQ -->
-<div class="section">
-  <h2>Frequently Asked Questions</h2>
-
-  <div class="faq-item">
-    <strong>Do I need prior neuroscience knowledge?</strong>
-    <p>No. This course is designed for beginners.</p>
+  <div class="cta">
+    <a href="https://forms.gle/exampleformlink" target="_blank">
+      <button>Enroll Now</button>
+    </a>
   </div>
-
-  <div class="faq-item">
-    <strong>Is this a graduate-level course?</strong>
-    <p>No. This is a fundamentals-level applied program.</p>
-  </div>
-
-  <div class="faq-item">
-    <strong>Will I learn advanced EEG preprocessing?</strong>
-    <p>No. The focus is on understanding and interpretation.</p>
-  </div>
-
-  <div class="faq-item">
-    <strong>Will I receive a certificate?</strong>
-    <p>Yes. An e-certificate will be issued by BIIHR upon completion.</p>
-  </div>
-
-  <div class="faq-item">
-    <strong>Is the course fully in Bengali?</strong>
-    <p>Yes, with necessary technical terms in English.</p>
-  </div>
-</div>
-
-</div>
-
-<!-- CTA -->
-<div class="cta">
-  <h2>Start Your Journey into Cognitive Neuroscience</h2>
-  <p>Enrollment details will be announced soon.</p>
 </div>
 
 <!-- FOOTER -->
 <div class="footer">
-  <p><strong>Bangladesh Institute of Innovative Health Research (BIIHR)</strong></p>
-  <p>Building research access and scientific capacity in Bangladesh</p>
+  <h3>Contact BIIHR</h3>
+  <div class="contact-info">
+    <div>
+      <p>Email: <a href="mailto:contact@biihr-bd.org">contact@biihr-bd.org</a></p>
+      <p>Phone: +880-123-456-7890</p>
+      <p>Location: Dhaka, Bangladesh</p>
+    </div>
+    <div>
+      <p>Follow us:</p>
+      <p>
+        <a href="https://www.linkedin.com/company/biihr" target="_blank">LinkedIn</a> | 
+        <a href="https://www.facebook.com/biihr" target="_blank">Facebook</a>
+      </p>
+    </div>
+  </div>
+</div>
+
 </div>
 
 </body>
